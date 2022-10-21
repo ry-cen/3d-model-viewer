@@ -1,0 +1,133 @@
+{
+    "camera": {
+        "type": "perspective",
+        "position": [0,0,-6],
+        "lookat": [0,0,0],
+        "up": [0,1,0],
+        "fov": 80
+    },
+    "lights": {
+        "ambient": [0.1, 0.1, 0.1],
+        "point_lights": [
+            {
+                "position": [0, 5, 0],
+                "Id": [0.8, 0.8, 0.8],
+                "Is": [1, 1, 1],
+                "k": 0.001
+            },
+            {
+                "position": [0, 0.5, -1],
+                "Id": [1, 0.4, 0.1],
+                "Is": [1, 1, 1],
+                "k": 0.001
+            }
+        ],
+        "directional_lights": [
+            {
+                "direction": [0, -2, 0],
+                "Id": [0.9, 0.6, 0.6],
+                "Is": [1, 1, 1]
+            }
+        ]
+    },
+    "root": {
+        "name": "node0",
+        "type": "node",
+        "translation": [0,0,0],
+        "rotation": [0,0,0],
+        "scale": [1,1,1],
+        "children": [
+            {
+                "name": "plane",
+                "type": "object",
+                "obj": "../objects/plane.obj",
+                "texture": "../objects/tatami.jpg",
+                "normal_map": "../objects/tatami_normal.jpg",
+                "color": "#022851",
+                "translation": [0,-1.0,0],
+                "rotation": [0,0,0],
+                "scale": [5,5,5],
+                "children": []
+            },
+            {
+                "name": "node1",
+                "type": "node",
+                "translation": [0,0,0],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": [
+                    {
+                        "name": "gura",
+                        "type": "object",
+                        "obj": "../objects/gura.obj",
+                        "texture": "../objects/gura.png",
+                        "color": "#ab0eab",
+                        "translation": [2,-1,-5],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    },
+                    {
+                        "name": "ame",
+                        "type": "object",
+                        "obj": "../objects/ame.obj",
+                        "texture": "../objects/ame.png",
+                        "color": "#ab0eab",
+                        "translation": [-2,-1,-5],
+                        "rotation": [0,0,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    },
+                    {
+                        "name": "teapot",
+                        "type": "object",
+                        "obj": "../objects/teapot.obj",
+                        "texture": "../objects/roof.jpg",
+                        "normal_map": "../objects/roof_normal.jpg",
+                        "color": "#1ea896",
+                        "translation": [2,0.2,-3.5],
+                        "rotation": [0,-120,0],
+                        "scale": [1.5,1.5,1.5],
+                        "children": []
+                    },
+                    {
+                        "name": "sphere",
+                        "type": "object",
+                        "obj": "../objects/sphere.obj",
+                        "texture": "../objects/roof.jpg",
+                        "normal_map": "../objects/roof_normal.jpg",
+                        "color": "#ab0eab",
+                        "translation": [-4,0,4],
+                        "rotation": [0,-60,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    },
+                    {
+                        "name": "cube",
+                        "type": "object",
+                        "obj": "../objects/cube.obj",
+                        "texture": "../objects/roof.jpg",
+                        "normal_map": "../objects/roof_normal.jpg",
+                        "color": "#ab0eab",
+                        "translation": [-4,0,1.5],
+                        "rotation": [0,-60,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    },
+                    {
+                        "name": "cylinder",
+                        "type": "object",
+                        "obj": "../objects/cylinder.obj",
+                        "texture": "../objects/roof.jpg",
+                        "normal_map": "../objects/roof_normal.jpg",
+                        "color": "#ab0eab",
+                        "translation": [9,0,1.5],
+                        "rotation": [0,-60,0],
+                        "scale": [1,1,1],
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    }
+}
